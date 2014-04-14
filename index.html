@@ -1,0 +1,39 @@
+---
+layout: page
+title: Welcome to My Blog
+tagline: Here, there is something about code...
+---
+{% include JB/setup %}
+
+<ul class="posts">
+  {% for post in paginator.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo;<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  {% if paginator.total_pages > 1 %}
+</ul>
+<div class="pagination">
+{% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <a style="color:#bbb">&laquo; Prev</a>
+  {% endif %}
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <a style="color:#bbb">{{ page }}</a>
+    {% elsif page == 1 %}
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <a style="color:#bbb">Next &raquo;</a>
+  {% endif %}
+</div>
+{% endif %}
+
+
+
+
