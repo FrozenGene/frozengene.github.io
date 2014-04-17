@@ -9,5 +9,4 @@ group: messageboard
 
 ###欢迎留言！
 
-
 {% include JB/comments %}

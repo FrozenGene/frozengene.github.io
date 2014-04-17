@@ -10,6 +10,7 @@
 <div class="row">
   <div class="span8">
     {{ content }}
+
     <div class="pagination btn-group">
       {% if page.previous %}
         <a class="btn prev" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
@@ -23,7 +24,6 @@
         <a class="btn next disabled">Next &rarr;</a>
       {% endif %}
     </div>
-	
 	{% include JB/post_sharing %}
     {% include JB/comments %}
 	
@@ -34,6 +34,12 @@
       <h4>Published</h4>
       <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
     </section>
+    
+	<section>
+      <h4>Author</h4>
+      <div><span>{{ site.author.name }}</span></div>
+    </section>
+
     {% if page.category %}
       <section>
         <h4>Category</h4>
