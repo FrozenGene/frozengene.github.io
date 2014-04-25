@@ -10,7 +10,7 @@
 <div class="row">
   <div class="span8">
     {{ content }}
-
+    {% include JB/copyright %}
     <div class="pagination btn-group">
       {% if page.previous %}
         <a class="btn prev" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
