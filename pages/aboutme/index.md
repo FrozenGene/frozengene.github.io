@@ -8,7 +8,7 @@ group: about
 {% include JB/setup %}
 Email: wuzhaozju(at)gmail(dot)com    
 github: [@FrozenGene][1]  
-微博: [@FrozenGene][2]
+微博: [@FrozenGene][2]    
 知乎: [@蓝色][3]  
   
 熟悉C++、编译原理，曾参与IBM XL C++编译器的研发，解决了若干Defect。  
