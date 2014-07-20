@@ -8,7 +8,8 @@ group: about
 {% include JB/setup %}
 Email: wuzhaozju(at)gmail(dot)com    
 github: [@FrozenGene][1]  
-微博: [@FrozenGene][2]  
+微博: [@FrozenGene][2]
+知乎: [@蓝色][3]  
   
 熟悉C++、编译原理，曾参与IBM XL C++编译器的研发，解决了若干Defect。  
 对操作系统与编译技术感兴趣，推崇Scrum模型开发软件。    
@@ -18,3 +19,4 @@ github: [@FrozenGene][1]
 
 [1]: https://github.com/FrozenGene
 [2]: http://weibo.com/2801242190
+[3]: http://www.zhihu.com/people/lan-se-52-30
