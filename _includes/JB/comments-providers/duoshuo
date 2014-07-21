@@ -8,7 +8,7 @@
     color:#bbb;
 }
 </style>
-<div class="ds-thread" data-thread-key="{% if page.date %}{{ page.date | date_to_long_string }} - {% endif %}{{ page.title }}" data-title="{{ page.title }} " data-url="{{ BASE_PATH }}{{ page.url }}"></div>
+<div class="ds-thread" data-thread-key="{% if page.date %}{{ page.date | date_to_long_string }} - {% endif %}{{ page.title }}" data-title="{{ page.title }} " data-url="http://frozengene.github.io{{ page.url }}"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"{{ site.JB.comments.duoshuo.short_name }}"};
 	(function() {
