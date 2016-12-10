@@ -1,0 +1,6 @@
+{
+  "name": "Frozengene.GitHub.io",
+  "tagline": "",
+  "body": "# My Personal Blog\r\n\r\nThis is my personal blog, you can click [this][1] to visit.  \r\nThis blog is built on [jekyll bootstrap][2] and [Hooligan Theme][3]\r\n\r\n## License\r\n\r\n[MIT](http://opensource.org/licenses/MIT)\r\n\r\n[1]: http://frozengene.github.io\r\n[2]: http://jekyllbootstrap.com\r\n[3]: https://github.com/dhulihan/hooligan",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
